@@ -1,0 +1,601 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(1, 1, 44);
+}
+
+/*------HEADER----*/
+.bigdiv {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 30;
+    justify-content: space-between;
+    box-shadow: 0px 0.5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navs {
+    /* background-color: yellow; */
+    display: flex;
+    gap: 2rem;
+    margin-top: 15px;
+    font-weight: 700;
+    margin-right: 15%;
+}
+
+.navs:hover {
+    cursor: pointer;
+}
+
+.buttons {
+    /* background-color: aqua; */
+    display: flex;
+    gap: 1rem;
+}
+
+.buttons button {
+    border-radius: 10px;
+    padding: 15px 20px;
+}
+
+.buttons button:nth-of-type(1) {
+    border: 1px solid rgb(1, 1, 44);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    background-color: white;
+}
+
+.buttons button:hover:nth-of-type(1) {
+    cursor: pointer;
+    border: 1px solid rgb(42, 65, 236);
+    color: rgb(42, 65, 236);
+    transition: all 2s;
+}
+
+.buttons button:hover:nth-of-type(2) {
+    cursor: pointer;
+    background-color: rgb(42, 65, 236);
+    border: none;
+    transition: all 2s;
+}
+
+.buttons button:nth-of-type(2) {
+    border: 1px solid rgb(1, 1, 44);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    background-color: rgb(1, 1, 44);
+    color: white;
+}
+
+/*----------HERO TEXT----------*/
+
+.mainhero {
+    display: flex;
+    /* background-color: yellow; */
+    justify-content: space-between;
+    padding: 9rem 5rem;
+}
+
+.hero {
+    position: relative;
+    height: 90vh;
+    margin-right: 3rem;
+}
+
+.border {
+    position: relative;
+    left: 40px;
+    top: 0;
+    height: 100%;
+    max-width: 19rem;
+}
+
+.border img {
+    height: 95%;
+    width: 100%;
+}
+
+.lady {
+    z-index: 10;
+    position: relative;
+    top: 10%;
+    width: 19rem;
+}
+
+img {
+    width: 100%;
+}
+
+.border {
+    position: absolute;
+    width: 350px;
+}
+
+.card1,
+.card2 {
+    position: absolute;
+    width: 140px;
+}
+
+.card1 {
+    z-index: 20;
+    position: absolute;
+    top: 150px;
+    left: -80px;
+}
+
+.card2 {
+    z-index: 20;
+    position: absolute;
+    top: 400px;
+    left: 250px;
+}
+
+.herotext {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.herotext h1 {
+    font-size: 60px;
+    max-width: 550px;
+    font-weight: 900;
+}
+
+.herotext p {
+    max-width: 500px;
+}
+
+.herotext button {
+    border-radius: 10px;
+    padding: 15px 20px;
+}
+
+.herotext>button {
+    border: 1px solid rgb(1, 1, 44);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    background-color: rgb(1, 1, 44);
+    color: white;
+    align-self: flex-start;
+    margin-top: 20px;
+}
+
+.herotext>button:hover {
+    cursor: pointer;
+    background-color: rgb(42, 65, 236);
+    border: none;
+    transition: all 2s;
+}
+
+.getb button {
+    background-color: white;
+    border: 1px solid rgb(206, 206, 206);
+    margin-top: 10px;
+    gap: 7px;
+}
+
+.getb i {
+    font-size: 20px;
+    margin-right: 7px;
+}
+
+
+/*--------------SECURE------------*/
+
+.secure {
+    display: flex;
+    justify-content: center;`
+}
+
+.sheild,
+.sheildtext {
+    margin-top: 2rem;
+}
+
+.sheild {
+    width: 100px;
+}
+
+.sheildtext {
+    margin-left: 30px;
+}
+
+.sheildtext p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    max-width: 740px;
+    font-size: 15px;
+}
+
+.sheildtext a {
+    text-decoration: none;
+    color: rgb(41, 41, 255);
+    font-weight: 600;
+}
+
+.sheildtext a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+/*--------------BUILD BOX-------------*/
+.build {
+    display: flex;
+    margin-top: 200px;
+    padding: 0rem 2rem;
+}
+
+.boxtext h1 {
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+.boxtext p {
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.boxtext button {
+    border-radius: 10px;
+    padding: 15px 20px;
+    border: 1px solid rgb(1, 1, 44);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    background-color: rgb(1, 1, 44);
+    color: white;
+}
+
+.boxtext button:hover {
+    cursor: pointer;
+    background-color: rgb(42, 65, 236);
+    border: none;
+    transition: all 2s;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: flex-end;
+}
+
+.boxes>div {
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.boxes>div:nth-of-type(1) h1 {
+    font-weight: 900;
+}
+
+.imgone {
+    width: 50px;
+}
+
+.imgtwo {
+    width: 30px;
+}
+
+.imgtwo:hover {
+    cursor: pointer;
+}
+
+.arrows {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/*------------INVESTIFY----------*/
+
+.investify {
+    display: flex;
+    margin-top: 200px;
+}
+
+.purpleimg img {
+    width: 550px;
+    padding: 0rem 2rem;
+}
+
+.purpletext {
+    padding: 3rem 1rem;
+}
+
+.purpletext p:nth-of-type(1) {
+    color: #7913e5;
+    font-weight: 600;
+    border: 0.1px solid #f0e2ff;
+    border-radius: 60px;
+    padding: 10px 20px;
+    background-color: #f0e2ff;
+    display: inline-block;
+}
+
+.purpletext h2 {
+    padding-top: 5rem;
+    font-size: 50px;
+}
+
+.purpletext p:nth-of-type(2) {
+    padding: 1rem 0rem;
+    font-size: large;
+    max-width: 500px;
+}
+
+.purpletext a {
+    color: #7913e5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.purpletext a:hover {
+    text-decoration: underline;
+}
+
+/*-------------TITO------------*/
+.tito {
+    display: flex;
+    margin-top: 200px;
+}
+
+.titotext {
+    background-color: #0d60d8;
+    color: white;
+    padding-top: 8rem;
+    padding-left: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titotext h1 {
+    font-size: 45px;
+    max-width: 450px;
+    font-weight: 900;
+}
+
+.titotext>p {
+    max-width: 450px;
+    line-height: 27.2px;
+    font-weight: 400;
+}
+
+.meet img {
+    width: 30px;
+}
+
+.meet {
+    display: flex;
+    align-items: center;
+    padding-top: 5rem;
+    font-weight: 700;
+    gap: 7px;
+}
+
+.meet:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.titoimg {
+    width: 500px;  
+}
+
+.titoimg>img{
+    width: 500px;
+}
+
+/*---------SCROLL-------*/
+.scroll{
+    display: flex;
+    padding: 5rem 2rem;
+    /* background-color: yellow; */
+    justify-content: center;
+    max-width: 75%;
+}
+
+.comments{
+    width: 50vw;
+    /* background-color: aqua; */
+}
+
+.comments div{
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+    max-width: 400px;
+    font-size: 13px;
+    padding: 0.5rem;
+}
+
+.scrollimg img{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin-top: 30px;
+}
+
+.person{
+    display: flex;
+    left: 7px;
+    max-width: 300px;   
+    margin-bottom: 10px;
+}
+
+.scrolltext{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.scrolltext p:nth-of-type(1){
+    text-align: right;
+    color: grey;
+    margin-bottom: 5px;
+}
+
+.scrolltext p:nth-of-type(2){
+    font-weight: 800;
+}
+
+.customers{
+    margin-top: 20px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+}
+
+.customers h1{
+    margin-bottom: 10px;
+}
+
+.customers p{
+    max-width: 500px;
+    margin-bottom: 10px;
+}
+
+.customers>button{
+    border-radius: 10px;
+    padding: 15px 20px;
+    border: 1px solid rgb(1, 1, 44);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    background-color: rgb(1, 1, 44);
+    color: white;
+    max-width: 200px;
+    margin-bottom: 5px;
+}
+
+.customers>button:hover{
+    cursor: pointer;
+    background-color: rgb(42, 65, 236);
+    border: none;
+    transition: all 2s;
+}
+
+.getb button{
+    background-color: white;
+    border: 1px solid rgb(236, 236, 236);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.getb i{
+    width: 20px;
+}
+
+/*-----------END FEATURING---------*/
+.endfeature{
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    gap: 50px;
+}
+
+.featureimg{
+    display: flex;
+    gap: 25px;
+}
+
+.featureimg img{
+    height: 70%;
+}
+
+/*----------END--------*/
+.end{
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+}
+
+.endimg img{
+    width: 180px;
+    margin-right: 80px;
+}
+
+.endtext{
+    display: flex;
+    gap: 150px;
+}
+
+.endtext div{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.endtext p{
+    font-size: 12.82px;
+    font-weight: 600;
+}
+
+.endtext h5{
+    font-weight: 900;
+    padding-bottom: 7px;
+}
+
+.endtext p:hover{
+    color: #0d60d8;
+    transition: all 2s;
+    cursor: pointer;
+}
+
+.endinfo{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.endicons i{
+    font-size: 25px;
+    gap: 7px;
+}
+
+.endloc p{
+    font-size: 13px;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+.endloc p:hover{
+    color: #0d60d8;
+    transition: all 2s;
+    cursor: pointer;
+}
+
+.endlimit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.endlimit p{
+    font-size: 13px;
+    margin-bottom: 20px;
+    max-width: 800px;
+    font-weight: 600;
+}
+
+.endlimit p:nth-of-type(2){
+    color: #0d60d8;
+}
